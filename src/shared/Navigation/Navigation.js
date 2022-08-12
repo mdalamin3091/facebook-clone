@@ -45,7 +45,7 @@ const Navigation = () => {
     },
   ];
   return (
-    <header className="bg-white shadow-2xl py-2 md:py-1">
+    <header className="bg-white nav-shadow py-2 md:py-1">
       <nav className="grid grid-cols-2 md:grid-cols-3 px-5">
         {/* 1 */}
         <div className="flex items-center justify-start gap-2">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,5 +8,12 @@
   .nav-icon {
     @apply text-2xl cursor-pointer hover:bg-hover_bg w-full py-3 items-center justify-center rounded-lg text-gray-600 
     flex border-b-2 border-transparent;
+  }
+}
+
+@layer utilities {
+  .nav-shadow {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   }
 }

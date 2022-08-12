@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
-import { homeLeftData } from "../../../data";
+import { homeLeftData } from "../../../../data";
 const Sidebar = () => {
   const [sliceItem, setSliceItem] = useState(6);
   return (

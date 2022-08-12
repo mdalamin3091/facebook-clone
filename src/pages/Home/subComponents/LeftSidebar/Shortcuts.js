@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { shortcutGroups } from "../../../data";
+import { shortcutGroups } from "../../../../data";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
-import { homeLeftData } from "../../../data";
+import { homeLeftData } from "../../../../data";
 const Shortcuts = () => {
   const [sliceItem, setSliceItem] = useState(4);
   return (
