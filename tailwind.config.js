@@ -8,6 +8,9 @@ module.exports = {
         primary:"#1B74E4",
         secondary:""
       },
+      fontFamily: {
+        poppins: "'Poppins', sans-serif",
+      },
       container: {
         center: true,
         padding: "1rem",
