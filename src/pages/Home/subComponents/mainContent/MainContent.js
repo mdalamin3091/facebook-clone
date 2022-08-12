@@ -8,7 +8,7 @@ const MainContent = () => {
     <div className="flex flex-col gap-5">
       <Story />
       <CreatePost />
-      <CreateRoom />
+      {/* <CreateRoom /> */}
     </div>
   );
 };

@@ -5,7 +5,7 @@ import { BsEmojiHeartEyes } from "react-icons/bs";
 const CreatePost = () => {
   return (
     <>
-      <div className="bg-white rounded-md shadow-lg px-5">
+      <div className="bg-white rounded-md shadow-md px-5">
         <div className="flex items-center flex-col justify-start pt-3">
           <div className="flex items-center justify-between gap-3 border-b border-gray-200 pb-4 w-full">
             <img

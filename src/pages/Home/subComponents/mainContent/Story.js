@@ -4,7 +4,7 @@ const Story = () => {
   return (
     <>
       <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
-        <div className="item shadow-lg rounded-lg overflow-hidden cursor-pointer bg-white h-60 relative group">
+        <div className="item shadow-md rounded-lg overflow-hidden cursor-pointer bg-white h-60 relative group">
           <img
             className="w-full h-[190px] rounded-lg object-cover group-hover:scale-[1.03] transition-all ease-in duration-150"
             src="https://i.ibb.co/HCQ2MLL/profile.jpg"
@@ -17,7 +17,7 @@ const Story = () => {
             Create Story
           </h3>
         </div>
-        <div className="shadow-lg rounded-lg overflow-hidden cursor-pointer relative group">
+        <div className="shadow-md rounded-lg overflow-hidden cursor-pointer relative group">
           <img
             className="w-full h-full rounded-lg object-cover group-hover:scale-[1.02] transition-all ease-in duration-150 bg-blend-multiply"
             src="https://i.ibb.co/HCQ2MLL/profile.jpg"

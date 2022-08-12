@@ -1,5 +1,6 @@
 import React from "react";
 import Index from "./subComponents/LeftSidebar/Index";
+import DisplayPost from "./subComponents/mainContent/DisplayPost";
 import MainContent from "./subComponents/mainContent/MainContent";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
           </div>
           <div className="col-span-8 md:col-span-4">
             <MainContent />
+            <DisplayPost />
           </div>
           <div className="col-span-2 bg-white hidden lg:block"></div>
         </div>
