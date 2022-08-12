@@ -29,6 +29,7 @@ const Navigation = () => {
   return (
     <header className="bg-white shadow-lg py-1">
       <nav className="grid grid-cols-2 md:grid-cols-3 px-5">
+        {/* 1 */}
         <div className="flex items-center justify-start gap-2">
           <span className="text-primary text-4xl cursor-pointer">
             <BsFacebook />
@@ -46,6 +47,7 @@ const Navigation = () => {
             </div>
           </div>
         </div>
+        {/* 2 */}
         <div className="center-items flex items-center justify-between gap-2">
           {menus.map((menu) => (
             <div
@@ -59,6 +61,8 @@ const Navigation = () => {
             </div>
           ))}
         </div>
+        {/* 3 */}
+        
       </nav>
     </header>
   );
