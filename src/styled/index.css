@@ -5,6 +5,6 @@
 @layer components {
   .nav-icon {
     @apply text-2xl cursor-pointer hover:bg-gray-100 w-full py-3 items-center justify-center rounded-lg text-gray-600 
-    hidden md:flex border-b-2 border-transparent;
+    flex border-b-2 border-transparent;
   }
 }
