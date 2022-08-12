@@ -6,7 +6,8 @@ module.exports = {
     extend: {
       colors:{
         primary:"#1B74E4",
-        secondary:""
+        hover_bg:"#f3f4f6",
+        home_bg:"#F0F2F5"
       },
       fontFamily: {
         poppins: "'Poppins', sans-serif",

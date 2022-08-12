@@ -6,7 +6,7 @@
 
 @layer components {
   .nav-icon {
-    @apply text-2xl cursor-pointer hover:bg-gray-100 w-full py-3 items-center justify-center rounded-lg text-gray-600 
+    @apply text-2xl cursor-pointer hover:bg-hover_bg w-full py-3 items-center justify-center rounded-lg text-gray-600 
     flex border-b-2 border-transparent;
   }
 }
