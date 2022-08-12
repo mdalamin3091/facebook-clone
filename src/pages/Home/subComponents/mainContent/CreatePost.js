@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaVideo } from "react-icons/fa";
 import { MdPhotoLibrary } from "react-icons/md";
 import { BsEmojiHeartEyes } from "react-icons/bs";
+import PostModal from "./PostModal";
 const CreatePost = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <div className="bg-white rounded-md shadow-md px-5">
@@ -17,6 +19,7 @@ const CreatePost = () => {
               type="text"
               placeholder="What's on your mind, Md?"
               className="bg-gray-100 focus:outline-none py-2 px-4 rounded-full w-full text-sm hover:bg-gray-200 cursor-pointer"
+              onClick={() => setShowModal(true)}
             />
           </div>
           <div className="flex items-center justify-evenly gap-3 w-[90%] py-2">
@@ -47,6 +50,7 @@ const CreatePost = () => {
           </div>
         </div>
       </div>
+      <PostModal setShowModal={setShowModal} showModal={showModal} />
     </>
   );
 };
