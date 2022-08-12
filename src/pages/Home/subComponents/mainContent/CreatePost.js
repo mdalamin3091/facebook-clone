@@ -16,7 +16,7 @@ const CreatePost = () => {
             <input
               type="text"
               placeholder="What's on your mind, Md?"
-              className="bg-gray-100 focus:outline-none py-2 px-4 rounded-full w-full text-lg hover:bg-gray-200 cursor-pointer"
+              className="bg-gray-100 focus:outline-none py-2 px-4 rounded-full w-full text-sm hover:bg-gray-200 cursor-pointer"
             />
           </div>
           <div className="flex items-center justify-evenly gap-3 w-[90%] py-2">

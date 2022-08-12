@@ -6,7 +6,7 @@ import MainContent from "./subComponents/mainContent/MainContent";
 const Home = () => {
   return (
     <>
-      <main className="bg-home_bg p-0 md:p-6">
+      <main className="bg-home_bg p-0 md:p-6 font-poppins">
         {/* <h1>In the name of Allah</h1> */}
         <div className="container grid grid-cols-8 gap-3">
           <div className="col-span-2 hidden lg:block">
