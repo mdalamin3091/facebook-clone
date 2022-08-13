@@ -3,15 +3,20 @@ import { ImCross } from "react-icons/im";
 import { FaGlobeAfrica } from "react-icons/fa";
 import { MdArrowDropDown, MdPhotoLibrary } from "react-icons/md";
 import { useState } from "react";
-const PostModal = ({ showModal, setShowModal }) => {
+import { useSelector, useDispatch } from "react-redux";
+import { modalOpen } from "../../../../store/reducers/modalSlice";
+const PostModal = () => {
   const [inputValue, setInputValue] = useState(null);
   const [uploadImage, setUploadImage] = useState(null);
+  const dispatch = useDispatch();
+  const { openModal } = useSelector((state) => state.modal);
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
   return (
     <>
-      {showModal ? (
+      {openModal ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <form
@@ -27,7 +32,7 @@ const PostModal = ({ showModal, setShowModal }) => {
                   </h3>
                   <button
                     className="p-3 ml-auto border-0 text-sm text-black leading-none font-semibold  bg-gray-200 rounded-full"
-                    onClick={() => setShowModal(false)}
+                    onClick={() => dispatch(modalOpen(false))}
                   >
                     <ImCross />
                   </button>
@@ -99,7 +104,7 @@ const PostModal = ({ showModal, setShowModal }) => {
                   <button
                     className="px-6 py-2 rounded shadow bg-primary hover:shadow-md hover:bg-blue-600 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 w-full text-white"
                     type="submit"
-                    onClick={() => setShowModal(false)}
+                    onClick={() => dispatch(modalOpen(false))}
                   >
                     Post
                   </button>
