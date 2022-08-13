@@ -4,6 +4,7 @@ import { BiLike } from "react-icons/bi";
 import { RiShareForwardLine } from "react-icons/ri";
 import { FaRegCommentAlt } from "react-icons/fa";
 import Comment from "./Comment";
+import { useAllPostsQuery } from "../../../../store/services/postsServices";
 const DisplayPost = () => {
   return (
     <div className="shadow-md rounded-lg overflow-hidden bg-white py-3 my-5">

@@ -11,16 +11,3 @@
   }
 }
 
-@layer utilities {
-  .nav-shadow {
-    box-shadow: -1px 9px 34px 0px rgba(179,179,179,1);
-}
-  .story-img::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    opacity: 0.3;
-  }
-}
